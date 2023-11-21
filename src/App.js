@@ -1,3 +1,14 @@
+import { TasksList } from './views/TasksList';
+import { styled } from 'styled-components';
+
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 export function App() {
-  return <h1>Hello world!</h1>;
+  return (
+    <Container>
+      <TasksList />
+    </Container>
+  );
 }
